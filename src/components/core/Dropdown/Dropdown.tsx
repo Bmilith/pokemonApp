@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { IoChevronDown } from 'react-icons/io5';
 import { CheckIcon } from '@/assets';
 
@@ -20,6 +20,8 @@ export const Dropdown = ({
   isDisabled = false,
 }: DropDownMultiProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const [openUpward, setOpenUpward] = useState(false);
 
   const handleToggle = (value: string) => {
     onToggle(value);
@@ -28,8 +30,22 @@ export const Dropdown = ({
     }
   };
 
+  const handleToggleDropdown = () => {
+    if (!dropdownRef.current) {
+      setIsOpen((prev) => !prev);
+      return;
+    }
+
+    const rect = dropdownRef.current.getBoundingClientRect();
+    const spaceBelow = window.innerHeight - rect.bottom;
+    const dropdownHeightEstimate = 250;
+
+    setOpenUpward(spaceBelow < dropdownHeightEstimate);
+    setIsOpen((prev) => !prev);
+  };
+
   return (
-    <div className="w-full relative">
+    <div ref={dropdownRef} className="relative w-full">
       {label && (
         <label className="block my-2 text-xl font-semibold text-white tracking-widest ">
           {label}
@@ -37,7 +53,7 @@ export const Dropdown = ({
       )}
       <button
         disabled={isDisabled}
-        onClick={() => setIsOpen((prev) => !prev)}
+        onClick={handleToggleDropdown}
         className={`flex w-full justify-between items-center border px-4 py-2 rounded-md shadow-sm text-sm ${
           isDisabled
             ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
@@ -65,7 +81,11 @@ export const Dropdown = ({
         />
       </button>
       {isOpen && !isDisabled && (
-        <div className="absolute z-10 bottom-full mb-1 w-full bg-white border border-gray-200 rounded-md shadow-lg p-2 max-h-60 overflow-auto">
+        <div
+          className={`absolute z-10 w-full bg-white border border-gray-200 rounded-md shadow-lg p-2 max-h-60 overflow-auto ${
+            openUpward ? 'bottom-full mb-1' : 'top-full mt-1'
+          }`}
+        >
           {options.map((option) => {
             const value = option.toLowerCase();
             const isChecked = selectedValues.includes(value);
