@@ -1,0 +1,60 @@
+{
+  "logoTitle": "Pokemon go",
+  "nav": {
+    "home": "Home",
+    "teamBuilder": "Team Builder"
+  },
+  "card": {
+    "add": "Add",
+    "remove": "Remove",
+    "types": "Types"
+  },
+  "sidebar": {
+    "noFavorites": "There is no favorite Pokemon!"
+  },
+  "home_heading": {
+    "title": "Pokemons",
+    "subtitle": "Pokémon (short for Pocket Monsters) is a media franchise created by Satoshi Tajiri and developed by Game Freak, first launched by Nintendo in 1996. It began as a pair of video games for the original Game Boy — Pokémon Red and Green (Blue in international releases) — and quickly grew into a global phenomenon encompassing video games, trading card games, an animated TV series, movies, toys, merchandise, and more."
+  },
+  "notFound": {
+    "title": "Error 404\nIt looks like something went wrong.",
+    "subtitle": "Don't worry, our team is already on it.",
+    "backHome": "Back home"
+  },
+  "compare": {
+    "title": "Compare Pokémon",
+    "pokemon1": "Pokémon 1",
+    "pokemon2": "Pokémon 2",
+    "battleResult": "Battle Result",
+    "points": "pts",
+    "tie": "It's a tie!",
+    "stronger": "is stronger overall!"
+  },
+  "heroSlider": {
+    "button": {
+      "compare": "Compare with Pikachu!",
+      "team": "Team Builder!"
+    },
+    "slides": {
+      "1": {
+        "title": "Pikachu Power",
+        "title2": "Burn the Skies",
+        "description": "ThunderBolt"
+      },
+      "2": {
+        "title": "Unleash Charizard",
+        "title2": "Spark Victory",
+        "description": "MaxPower!"
+      },
+      "3": {
+        "title": "Blastoise Barrage",
+        "title2": "Make Waves",
+        "description": "Unstoppable"
+      }
+    }
+  },
+  "team": {
+    "title": "My Pokémon Team",
+    "favorite": "Favorite Pokémon"
+  }
+}
