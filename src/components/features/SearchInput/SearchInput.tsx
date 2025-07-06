@@ -49,7 +49,7 @@ export const SearchInput = () => {
         value={searchTerm}
         onChange={handleSearchChange}
       />
-      <IoMdSearch className="text-xl text-gray-600 dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-1 group-hover:text-pretty duration-300" />
+      <IoMdSearch className="text-xl text-gray-600 dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-1.5 group-hover:text-pretty duration-300" />
     </div>
   );
 };

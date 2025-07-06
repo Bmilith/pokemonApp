@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
 import { Spinner } from '@/components/core';
 import {
   PokemonCard,
@@ -21,7 +20,6 @@ import { paginate } from '@/utils/paginate';
 
 export const PokemonList = () => {
   const { pokemons, loading } = usePokemonContext();
-  const [_searchParams, _setSearchParams] = useSearchParams();
   const { page, pageSize, updatePage } = usePaginationQuery();
   const { toggleFavorite, isFavorite } = useFavorites();
   const { addToTeam, removeFromTeam, isInTeam, team } = useTeam();

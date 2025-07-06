@@ -20,7 +20,7 @@ export const NotFoundPage = () => {
         </p>
         <Link
           className="p-2 px-8 bg-white text-red-600 font-semibold hover:bg-black rounded-md"
-          to="/home"
+          to="/home?page=1&pageSize=20"
         >
           {t('notFound.backHome')}
         </Link>

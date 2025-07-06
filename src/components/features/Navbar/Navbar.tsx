@@ -15,7 +15,7 @@ export const NavBar = () => {
   };
 
   const MenuLinks = [
-    { nameKey: 'nav.home', link: '/home' },
+    { nameKey: 'nav.home', link: '/home?page=1&pageSize=20' },
     { nameKey: 'nav.teamBuilder', link: '/team-builder' },
   ];
 
