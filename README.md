@@ -43,7 +43,7 @@ Suggestions to improve this flow:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd yourproject
+   cd PokemonApp
    ```
 3. Install the dependencies:
    ```bash
@@ -58,5 +58,5 @@ Suggestions to improve this flow:
    ```
 2. Run tests
    ```bash
-   npm test
+   npm run test
    ```
