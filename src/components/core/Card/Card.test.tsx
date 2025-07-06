@@ -80,7 +80,7 @@ describe('Card component', () => {
         teamCount={0}
       />
     );
-    expect(screen.getAllByRole('button')[1]).toHaveTextContent('Add');
+    expect(screen.getAllByRole('button')[1]).toHaveTextContent('card.add');
 
     rerender(
       <Card
@@ -92,7 +92,7 @@ describe('Card component', () => {
         teamCount={0}
       />
     );
-    expect(screen.getAllByRole('button')[1]).toHaveTextContent('Remove');
+    expect(screen.getAllByRole('button')[1]).toHaveTextContent('card.remove');
   });
 
   it('disables "Add" button when teamCount >= 20 and pokemon is not in team', () => {

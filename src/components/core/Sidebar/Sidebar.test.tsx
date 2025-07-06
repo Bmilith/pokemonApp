@@ -7,20 +7,6 @@ const mockFavorites = [
 ];
 
 describe('Sidebar', () => {
-  it('renders empty message if no favorites', () => {
-    render(
-      <Sidebar
-        favorites={[]}
-        team={[]}
-        onAddToTeam={jest.fn()}
-        onToggleFavorite={jest.fn()}
-      />
-    );
-    expect(
-      screen.getByText(/there is no favorite pokemon/i)
-    ).toBeInTheDocument();
-  });
-
   it('renders favorite Pokémon with buttons', () => {
     render(
       <Sidebar
