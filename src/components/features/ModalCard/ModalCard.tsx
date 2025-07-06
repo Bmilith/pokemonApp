@@ -1,6 +1,6 @@
 import { getGenerationColor } from './helper';
 import { Button, Chip, Heading, MetricBar } from '@/components/core';
-import { MAX_STAT_VALUE } from '@/constants/pokemonsConstants';
+import { MAX_STAT_VALUE } from '@/constants/pokemonConstants';
 import type { Pokemon } from '@/types/pokemons';
 import { exportToJSON } from '@/utils/dataExport';
 

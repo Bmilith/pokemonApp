@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MetricBar } from './MetricBar';
-import { MAX_STAT_VALUE } from '@/constants/pokemonsConstants';
+import { MAX_STAT_VALUE } from '@/constants/pokemonConstants';
 
 describe('MetricBar', () => {
   it('renders the label and value correctly', () => {

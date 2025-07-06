@@ -1,4 +1,4 @@
-import { GENERATION_ORDER_MAP } from '@/constants/pokemonsConstants';
+import { GENERATION_ORDER_MAP } from '@/constants/pokemonConstants';
 import { Pokemon } from '@/types/pokemons';
 
 export const getTotalPower = (pokemon: Pokemon) => {

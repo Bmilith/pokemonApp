@@ -1,4 +1,4 @@
-import { PokemonGeneration } from '@/constants/pokemonsConstants';
+import { PokemonGeneration } from '@/constants/pokemonConstants';
 
 export const getGenerationColor = (gen: string) => {
   switch (gen.toLowerCase()) {

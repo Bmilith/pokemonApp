@@ -7,7 +7,7 @@ import {
   POKEMON_GENERATION_VALUES,
   POKEMON_TYPES,
   POKEMON_ABILITIES,
-} from '@/constants/pokemonsConstants';
+} from '@/constants/pokemonConstants';
 import { sortOptions } from '@/constants/sortConstants';
 
 export const FilterPanel = () => {

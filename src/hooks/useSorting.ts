@@ -5,7 +5,7 @@ import {
   getStatValue,
   getTotalPower,
 } from './helpers/sorting';
-import { PokemonStat } from '@/constants/pokemonsConstants';
+import { PokemonStat } from '@/constants/pokemonConstants';
 import { PokemonSortType } from '@/constants/sortConstants';
 import type { Pokemon } from '@/types/pokemons';
 

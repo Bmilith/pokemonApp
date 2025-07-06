@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { extractFilterParams } from './helpers/filter';
 import { DEFAULT_QUERY_PARAMS } from '@/constants/baseConstants';
-import { POKEMON_STAT } from '@/constants/pokemonsConstants';
+import { POKEMON_STAT } from '@/constants/pokemonConstants';
 import type { Pokemon } from '@/types/pokemons';
 
 export function usePokemonFilter(pokemons: Pokemon[]) {

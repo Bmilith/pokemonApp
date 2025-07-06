@@ -5,7 +5,7 @@ import {
   ReactNode,
   useContext,
 } from 'react';
-import { ALL_POKEMONS } from '@/constants/pokemonsConstants';
+import { ALL_POKEMONS } from '@/constants/pokemonConstants';
 import {
   fetchBatchPokemonDetails,
   fetchPokemonsList,

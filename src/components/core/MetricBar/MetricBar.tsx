@@ -1,4 +1,4 @@
-import { MAX_STAT_VALUE } from '@/constants/pokemonsConstants';
+import { MAX_STAT_VALUE } from '@/constants/pokemonConstants';
 
 interface MetricBarProps {
   label: string;
