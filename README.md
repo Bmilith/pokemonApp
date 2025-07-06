@@ -5,7 +5,7 @@ This application fetches and displays a comprehensive list of Pokémon along wit
 Features include:
 
 - Fetching data from the Pokémon API.
-- Displaying Pokémon in a paginated list or grid.
+- Displaying Pokémon in a paginated list.
 - Viewing detailed information for each Pokémon.
 - Handling loading and error states effectively.
 
