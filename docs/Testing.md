@@ -38,5 +38,4 @@ In our project, we use three main levels of testing:
 
 - Introduce **Vitest + Playwright** or **Cypress**. for covering key E2E user flows, leveraging its cross-browser capabilities.
 - Integrate CI/CD pipelines (e.g., GitHub Actions, GitLab CI, Jenkins) to run tests automatically on pull requests and merges, enabling faster feedback and safer deployments.
-- Write tests in parallel with new feature development.
 - Regularly review and refactor tests to keep them relevant and efficient.
