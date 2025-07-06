@@ -64,6 +64,7 @@ export const NavBar = () => {
                 options={['en']}
                 selectedValues={[i18n.language]}
                 onToggle={(lang) => changeLanguage(lang)}
+                isDisabled={true}
               />
             </div>
           </div>
@@ -85,6 +86,7 @@ export const NavBar = () => {
                 options={['en']}
                 selectedValues={[i18n.language]}
                 onToggle={(lang) => changeLanguage(lang)}
+                isDisabled={true}
               />
             </div>
           </div>

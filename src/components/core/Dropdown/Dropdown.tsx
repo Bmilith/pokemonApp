@@ -8,6 +8,7 @@ interface DropDownMultiProps {
   selectedValues: string[];
   onToggle: (value: string) => void;
   multiSelect?: boolean;
+  isDisabled?: boolean;
 }
 
 export const Dropdown = ({
@@ -16,6 +17,7 @@ export const Dropdown = ({
   selectedValues,
   onToggle,
   multiSelect,
+  isDisabled = false,
 }: DropDownMultiProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,8 +36,13 @@ export const Dropdown = ({
         </label>
       )}
       <button
+        disabled={isDisabled}
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex w-full justify-between items-center border border-gray-300 bg-white px-4 py-2 rounded-md shadow-sm text-sm text-gray-700 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
+        className={`flex w-full justify-between items-center border px-4 py-2 rounded-md shadow-sm text-sm ${
+          isDisabled
+            ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
+            : 'bg-white text-gray-700 border-gray-300 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-200'
+        }`}
       >
         <span className="truncate">
           {selectedValues.length > 0 ? (
@@ -57,7 +64,7 @@ export const Dropdown = ({
           }`}
         />
       </button>
-      {isOpen && (
+      {isOpen && !isDisabled && (
         <div className="absolute z-10 bottom-full mb-1 w-full bg-white border border-gray-200 rounded-md shadow-lg p-2 max-h-60 overflow-auto">
           {options.map((option) => {
             const value = option.toLowerCase();
